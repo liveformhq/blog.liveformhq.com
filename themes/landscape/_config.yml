@@ -1,6 +1,8 @@
 # Header
 menu:
-  Home: /
+  LiveForm: https://liveformhq.com/
+  Docs: https://docs.liveformhq.com/
+  Blog: /
   Archives: /archives
 rss: /atom.xml
 
