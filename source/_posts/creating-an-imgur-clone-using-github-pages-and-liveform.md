@@ -121,3 +121,5 @@ Show all images....
 {% asset_img imgur6.png Imgur clone screenshot %}
 
 Obviously this is not the same as Imgur :) But you get the idea ;)
+
+Oh, and here is a link to the final Github Pages website: https://minhajuddin.github.io/imgur_clone/
