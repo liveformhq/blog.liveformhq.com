@@ -1,102 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LiveForm Blog</title>
   
-  <title>Creating an Imgur clone using Github Pages and Liveform | LiveForm Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Yesterday, we released the ability to upload files using Liveform Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Creating an Imgur clone using Github Pages and Liveform">
-<meta property="og:url" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/index.html">
-<meta property="og:site_name" content="LiveForm Blog">
-<meta property="og:description" content="Yesterday, we released the ability to upload files using Liveform Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work.">
-<meta property="og:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur1.png">
-<meta property="og:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur2.png">
-<meta property="og:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur4.png">
-<meta property="og:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur5.png">
-<meta property="og:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur6.png">
-<meta property="og:updated_time" content="2016-12-10T15:04:28.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Creating an Imgur clone using Github Pages and Liveform">
-<meta name="twitter:description" content="Yesterday, we released the ability to upload files using Liveform Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work.">
-<meta name="twitter:image" content="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur1.png">
+  <link href="/atom.xml" rel="self"/>
   
-    <link rel="alternate" href="/atom.xml" title="LiveForm Blog" type="application/atom+xml">
+  <link href="http://blog.liveformhq.com/"/>
+  <updated>2016-12-10T15:04:28.000Z</updated>
+  <id>http://blog.liveformhq.com/</id>
   
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
-</head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">LiveForm Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="https://liveformhq.com/">LiveForm</a>
-        
-          <a class="main-nav-link" href="http://docs.liveformhq.com/">Docs</a>
-        
-          <a class="main-nav-link" href="/">Blog</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.liveformhq.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-creating-an-imgur-clone-using-github-pages-and-liveform" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/" class="article-date">
-  <time datetime="2016-11-27T18:24:54.000Z" itemprop="datePublished">2016-11-27</time>
-</a>
+  <author>
+    <name>Khaja Minhajuddin</name>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  </author>
   
-    <h1 class="article-title" itemprop="name">
-      Creating an Imgur clone using Github Pages and Liveform
-    </h1>
+  <generator uri="http://hexo.io/">Hexo</generator>
   
-
-      </header>
+  <entry>
+    <title>Creating an Imgur clone using Github Pages and Liveform</title>
+    <link href="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/"/>
+    <id>http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/</id>
+    <published>2016-11-27T18:24:54.000Z</published>
+    <updated>2016-12-10T15:04:28.000Z</updated>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
+    <content type="html"><![CDATA[<p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
 <ol>
 <li>Create a new form called <em>Imgur Form</em> in Liveform.<img src="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur1.png" alt="Create Imgur Form" title="Create Imgur Form"></li>
 <li>Create a new repository in Github, let’s name it <em>imgur_clone</em><img src="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur2.png" alt="Create Github repository" title="Create Github repository"></li>
@@ -127,130 +53,104 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
 <img src="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/imgur6.png" alt="Imgur clone screenshot" title="Imgur clone screenshot"></p>
 <p>Obviously this is not the same as Imgur :) But you get the idea ;)</p>
 <p>Oh, and here is a link to the final Github Pages website: <a href="https://minhajuddin.github.io/imgur_clone/" target="_blank" rel="external">https://minhajuddin.github.io/imgur_clone/</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/" data-id="ciwjcrky900001do4x4n4gskg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li></ul>
-
-    </footer>
-  </div>
-  
+]]></content>
     
-<nav id="article-nav">
-  
-  
-    <a href="/2016/11/26/file-uploads-for-your-forms/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">File uploads for your forms</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
+    <summary type="html">
     
-
-  
+      &lt;p&gt;&lt;a href=&quot;http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/&quot;&gt;Yesterday, we released the ability to upload files using Liv
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contact-form/">Contact Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/file-upload/">File upload</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live/">Live</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/v1/">V1</a></li></ul>
-    </div>
-  </div>
-
-
-  
+    </summary>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/api/" style="font-size: 10px;">API</a> <a href="/tags/contact-form/" style="font-size: 10px;">Contact Form</a> <a href="/tags/file-upload/" style="font-size: 10px;">File upload</a> <a href="/tags/image-uploads/" style="font-size: 10px;">Image uploads</a> <a href="/tags/imgur-clone/" style="font-size: 10px;">Imgur clone</a> <a href="/tags/live/" style="font-size: 10px;">Live</a> <a href="/tags/v1/" style="font-size: 10px;">V1</a>
-    </div>
-  </div>
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
+      <category term="Image uploads" scheme="http://blog.liveformhq.com/tags/image-uploads/"/>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/">Creating an Imgur clone using Github Pages and Liveform</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/26/file-uploads-for-your-forms/">File uploads for your forms</a>
-          </li>
-        
-          <li>
-            <a href="/2016/10/07/our-first-version-is-live/">Our first version is live!</a>
-          </li>
-        
-          <li>
-            <a href="/2016/10/07/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 Khaja Minhajuddin<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="https://liveformhq.com/" class="mobile-nav-link">LiveForm</a>
-  
-    <a href="http://docs.liveformhq.com/" class="mobile-nav-link">Docs</a>
-  
-    <a href="/" class="mobile-nav-link">Blog</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+      <category term="Imgur clone" scheme="http://blog.liveformhq.com/tags/imgur-clone/"/>
     
+      <category term="API" scheme="http://blog.liveformhq.com/tags/api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>File uploads for your forms</title>
+    <link href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/"/>
+    <id>http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/</id>
+    <published>2016-11-26T19:35:49.000Z</published>
+    <updated>2016-12-10T15:04:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>You can now do file uploads using Liveform. You just need two things to be able
+to upload files.</p>
+<ol>
+<li>Make sure your form has an attribute <code>enctype=&quot;multipart/form-data&quot;</code></li>
+<li>Add a file field e.g. <code>&lt;input type=file name=resume /&gt;</code></li>
+</ol>
+<p>That’s it, once you have those, files can be uploaded through your forms.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;You can now do file uploads using Liveform. You just need two things to be able
+to upload files.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure your form has an 
+    
+    </summary>
+    
+    
+      <category term="File upload" scheme="http://blog.liveformhq.com/tags/file-upload/"/>
+    
+      <category term="Contact Form" scheme="http://blog.liveformhq.com/tags/contact-form/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Our first version is live!</title>
+    <link href="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/"/>
+    <id>http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/</id>
+    <published>2016-10-07T23:32:37.000Z</published>
+    <updated>2016-12-10T15:04:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Our first version of LiveForm is live!</p>
+<p>We hope you guys find it useful :)</p>
+<p>You can read more about how to use LiveForm by checking out the <a href="http://docs.liveformhq.com/" target="_blank" rel="external">documentation at http://docs.liveformhq.com/</a>.
+The tl;dr; version of it is: Use LiveForm for all your online forms without the need for iframes!</p>
+<p>So, go ahead and <a href="https://liveformhq.com/registrations/new?plan=starter" target="_blank" rel="external">sign up now!</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Our first version of LiveForm is live!&lt;/p&gt;
+&lt;p&gt;We hope you guys find it useful :)&lt;/p&gt;
+&lt;p&gt;You can read more about how to use LiveForm by ch
+    
+    </summary>
+    
+    
+      <category term="V1" scheme="http://blog.liveformhq.com/tags/v1/"/>
+    
+      <category term="Live" scheme="http://blog.liveformhq.com/tags/live/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.liveformhq.com/2016/10/07/hello-world/"/>
+    <id>http://blog.liveformhq.com/2016/10/07/hello-world/</id>
+    <published>2016-10-07T00:00:00.000Z</published>
+    <updated>2016-12-10T15:04:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to the LiveForm Blog!</p>
+<p>We’ll be sharing technology and related stuff used in LiveForm here.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to the LiveForm Blog!&lt;/p&gt;
+&lt;p&gt;We’ll be sharing technology and related stuff used in LiveForm here.&lt;/p&gt;
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
-</body>
-</html>
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
