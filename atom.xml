@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.liveformhq.com/"/>
-  <updated>2016-12-25T13:54:53.000Z</updated>
+  <updated>2017-01-02T06:41:16.000Z</updated>
   <id>http://blog.liveformhq.com/</id>
   
   <author>
@@ -16,11 +16,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to build an ajax form using LiveForm and jQuery</title>
+    <link href="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/"/>
+    <id>http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/</id>
+    <published>2017-01-01T23:14:43.000Z</published>
+    <updated>2017-01-02T06:41:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.</p>
+<p>Take this form for example, it has a name, email and a message field.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"contact-form"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">action</span>=<span class="string">"https://liveformhq.com/form/27fb4351-d2f7-45d3-96ac-8dae0eda2d26"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span> <span class="attr">type</span>=<span class="string">"email"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">"message"</span> <span class="attr">name</span>=<span class="string">"message"</span> <span class="attr">rows</span>=<span class="string">8</span> <span class="attr">cols</span>=<span class="string">40</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"submit"</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Send Message<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>By default this form will make a full page post request to the server. We can use jQuery to
+make it do the submission via AJAX. All we need to do, is include jQuery (a CDN version can be found at <a href="https://code.jquery.com/" target="_blank" rel="external">https://code.jquery.com/</a>)
+And intercept the form submission and make an AJAX post instead of the default. Here is some code which does that:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// intercept the form submission</span></div><div class="line">  $(<span class="string">"#contact-form"</span>).on(<span class="string">"submit"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">      e.preventDefault(); <span class="comment">// stop the form from being submitted</span></div><div class="line"></div><div class="line">      <span class="comment">// make an ajax POST request to the form's action</span></div><div class="line">      $.ajax(&#123;</div><div class="line">          <span class="attr">type</span>: <span class="string">"POST"</span>,</div><div class="line">          <span class="attr">url</span>: $(<span class="keyword">this</span>).attr(<span class="string">"action"</span>),      <span class="comment">// use the form's action attribute as the endpoint</span></div><div class="line">          data: $(<span class="keyword">this</span>).serialize(),        <span class="comment">// use the data from the form</span></div><div class="line">          headers:</div><div class="line">          &#123;</div><div class="line">              <span class="string">"Accept"</span>: <span class="string">"application/json"</span>  <span class="comment">// this makes the server send you a JSON response</span></div><div class="line">          &#125;,</div><div class="line">          <span class="attr">success</span>: <span class="function"><span class="keyword">function</span>(<span class="params">response</span>)       // <span class="title">handle</span> <span class="title">the</span> <span class="title">successful</span> <span class="title">submission</span> <span class="title">of</span> <span class="title">your</span> <span class="title">POST</span></span></div><div class="line">          &#123;</div><div class="line">              <span class="built_in">console</span>.log(response);        <span class="comment">// response contains the form submission that was just made</span></div><div class="line">              alert(<span class="string">"Thank you for your submission, we'll get back to you soon :)"</span>);</div><div class="line">              $(<span class="string">"#contact-form"</span>)[<span class="number">0</span>].reset();<span class="comment">// reset the form</span></div><div class="line">          &#125;,</div><div class="line">      &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>You can check out a full working demo at <a href="http://demos.liveformhq.com/ajax-form/" target="_blank" rel="external">http://demos.liveformhq.com/ajax-form/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.&lt;/p&gt;
+&lt;p&gt;Take this form for example, it has a name, e
+    
+    </summary>
+    
+    
+      <category term="Ajax Form" scheme="http://blog.liveformhq.com/tags/ajax-form/"/>
+    
+      <category term="jQuery" scheme="http://blog.liveformhq.com/tags/jquery/"/>
+    
+      <category term="Ajax" scheme="http://blog.liveformhq.com/tags/ajax/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LiveForm now has the ability to export your form&#39;s messages to Excel/CSV</title>
     <link href="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/"/>
     <id>http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/</id>
     <published>2016-12-25T19:19:45.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>Many of you have asked for a feature which allows downloading of messages to Excel.
 We now have that feature :)</p>
@@ -55,7 +88,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/"/>
     <id>http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/</id>
     <published>2016-12-19T23:30:46.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can wire up LiveForm to use Akismet to prevent spam on your blogs and sites easily.</p>
 <ol>
@@ -86,7 +119,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/"/>
     <id>http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/</id>
     <published>2016-12-18T00:26:54.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can use Nginx to mask the form id of your LiveForm url. Here is a configuration which lets you do that.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">  server_name awesome.com;</div><div class="line">  # ....</div><div class="line"></div><div class="line">  location /form &#123;</div><div class="line">    proxy_pass https://liveformhq.com/form/369c5f72-7940-4d20-b3c7-8a963fc49a15;</div><div class="line"></div><div class="line">    proxy_set_header  X-Real-IP        $remote_addr;</div><div class="line">    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;</div><div class="line">    proxy_set_header  Host             $http_host;</div><div class="line">    proxy_set_header X_FORWARDED_PROTO $scheme;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -113,7 +146,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/"/>
     <id>http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/</id>
     <published>2016-11-27T18:24:54.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
 <ol>
@@ -168,7 +201,7 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
     <link href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/"/>
     <id>http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/</id>
     <published>2016-11-26T19:35:49.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can now do file uploads using Liveform. You just need two things to be able
 to upload files.</p>
@@ -200,7 +233,7 @@ to upload files.&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/"/>
     <id>http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/</id>
     <published>2016-10-07T23:32:37.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>Our first version of LiveForm is live!</p>
 <p>We hope you guys find it useful :)</p>
@@ -229,7 +262,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
     <link href="http://blog.liveformhq.com/2016/10/07/hello-world/"/>
     <id>http://blog.liveformhq.com/2016/10/07/hello-world/</id>
     <published>2016-10-07T00:00:00.000Z</published>
-    <updated>2016-12-25T13:54:53.000Z</updated>
+    <updated>2017-01-02T06:41:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to the LiveForm Blog!</p>
 <p>We’ll be sharing technology and related stuff used in LiveForm here.</p>

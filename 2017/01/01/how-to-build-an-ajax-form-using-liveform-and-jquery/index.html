@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to build an ajax form using LiveForm and jQuery | LiveForm Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.
+Take this form for example, it has a name, email and a message field.
+123456789&amp;lt;form id=&quot;contact-form&quot; method=&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to build an ajax form using LiveForm and jQuery">
+<meta property="og:url" content="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/index.html">
+<meta property="og:site_name" content="LiveForm Blog">
+<meta property="og:description" content="In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.
+Take this form for example, it has a name, email and a message field.
+123456789&amp;lt;form id=&quot;contact-form&quot; method=&quot;">
+<meta property="og:updated_time" content="2017-01-02T06:41:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to build an ajax form using LiveForm and jQuery">
+<meta name="twitter:description" content="In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.
+Take this form for example, it has a name, email and a message field.
+123456789&amp;lt;form id=&quot;contact-form&quot; method=&quot;">
+  
+    <link rel="alternate" href="/atom.xml" title="LiveForm Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">LiveForm Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="https://liveformhq.com/">LiveForm</a>
+        
+          <a class="main-nav-link" href="http://docs.liveformhq.com/">Docs</a>
+        
+          <a class="main-nav-link" href="/">Blog</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.liveformhq.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-how-to-build-an-ajax-form-using-liveform-and-jquery" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/" class="article-date">
+  <time datetime="2017-01-01T23:14:43.000Z" itemprop="datePublished">2017-01-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      How to build an ajax form using LiveForm and jQuery
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.</p>
+<p>Take this form for example, it has a name, email and a message field.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"contact-form"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">action</span>=<span class="string">"https://liveformhq.com/form/27fb4351-d2f7-45d3-96ac-8dae0eda2d26"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span> <span class="attr">type</span>=<span class="string">"email"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">"message"</span> <span class="attr">name</span>=<span class="string">"message"</span> <span class="attr">rows</span>=<span class="string">8</span> <span class="attr">cols</span>=<span class="string">40</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"submit"</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Send Message<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>By default this form will make a full page post request to the server. We can use jQuery to
+make it do the submission via AJAX. All we need to do, is include jQuery (a CDN version can be found at <a href="https://code.jquery.com/" target="_blank" rel="external">https://code.jquery.com/</a>)
+And intercept the form submission and make an AJAX post instead of the default. Here is some code which does that:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// intercept the form submission</span></div><div class="line">  $(<span class="string">"#contact-form"</span>).on(<span class="string">"submit"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">      e.preventDefault(); <span class="comment">// stop the form from being submitted</span></div><div class="line"></div><div class="line">      <span class="comment">// make an ajax POST request to the form's action</span></div><div class="line">      $.ajax(&#123;</div><div class="line">          <span class="attr">type</span>: <span class="string">"POST"</span>,</div><div class="line">          <span class="attr">url</span>: $(<span class="keyword">this</span>).attr(<span class="string">"action"</span>),      <span class="comment">// use the form's action attribute as the endpoint</span></div><div class="line">          data: $(<span class="keyword">this</span>).serialize(),        <span class="comment">// use the data from the form</span></div><div class="line">          headers:</div><div class="line">          &#123;</div><div class="line">              <span class="string">"Accept"</span>: <span class="string">"application/json"</span>  <span class="comment">// this makes the server send you a JSON response</span></div><div class="line">          &#125;,</div><div class="line">          <span class="attr">success</span>: <span class="function"><span class="keyword">function</span>(<span class="params">response</span>)       // <span class="title">handle</span> <span class="title">the</span> <span class="title">successful</span> <span class="title">submission</span> <span class="title">of</span> <span class="title">your</span> <span class="title">POST</span></span></div><div class="line">          &#123;</div><div class="line">              <span class="built_in">console</span>.log(response);        <span class="comment">// response contains the form submission that was just made</span></div><div class="line">              alert(<span class="string">"Thank you for your submission, we'll get back to you soon :)"</span>);</div><div class="line">              $(<span class="string">"#contact-form"</span>)[<span class="number">0</span>].reset();<span class="comment">// reset the form</span></div><div class="line">          &#125;,</div><div class="line">      &#125;);</div><div class="line">  &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>You can check out a full working demo at <a href="http://demos.liveformhq.com/ajax-form/" target="_blank" rel="external">http://demos.liveformhq.com/ajax-form/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/" data-id="cixfr77to000d1dnvv7huv82w" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax/">Ajax</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax-form/">Ajax Form</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jQuery</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">LiveForm now has the ability to export your form&#39;s messages to Excel/CSV</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax-form/">Ajax Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/akismet/">Akismet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csv/">CSV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contact-form/">Contact Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">Download</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/export/">Export</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/file-upload/">File upload</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live/">Live</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mask/">Mask</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spam/">Spam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/v1/">V1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jQuery</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/api/" style="font-size: 10px;">API</a> <a href="/tags/ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/ajax-form/" style="font-size: 10px;">Ajax Form</a> <a href="/tags/akismet/" style="font-size: 10px;">Akismet</a> <a href="/tags/csv/" style="font-size: 10px;">CSV</a> <a href="/tags/contact-form/" style="font-size: 10px;">Contact Form</a> <a href="/tags/download/" style="font-size: 10px;">Download</a> <a href="/tags/excel/" style="font-size: 10px;">Excel</a> <a href="/tags/export/" style="font-size: 10px;">Export</a> <a href="/tags/file-upload/" style="font-size: 10px;">File upload</a> <a href="/tags/image-uploads/" style="font-size: 10px;">Image uploads</a> <a href="/tags/imgur-clone/" style="font-size: 10px;">Imgur clone</a> <a href="/tags/live/" style="font-size: 10px;">Live</a> <a href="/tags/mask/" style="font-size: 10px;">Mask</a> <a href="/tags/nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/spam/" style="font-size: 10px;">Spam</a> <a href="/tags/v1/" style="font-size: 10px;">V1</a> <a href="/tags/jquery/" style="font-size: 10px;">jQuery</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/">How to build an ajax form using LiveForm and jQuery</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/">LiveForm now has the ability to export your form&#39;s messages to Excel/CSV</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/">Use Akismet to prevent spam on your blogs and sites</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/">Using nginx to mask the liveform url on your contact forms</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/">Creating an Imgur clone using Github Pages and Liveform</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Khaja Minhajuddin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="https://liveformhq.com/" class="mobile-nav-link">LiveForm</a>
+  
+    <a href="http://docs.liveformhq.com/" class="mobile-nav-link">Docs</a>
+  
+    <a href="/" class="mobile-nav-link">Blog</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
