@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.liveformhq.com/"/>
-  <updated>2017-01-02T11:59:17.000Z</updated>
+  <updated>2017-03-04T12:29:42.000Z</updated>
   <id>http://blog.liveformhq.com/</id>
   
   <author>
@@ -16,11 +16,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to use the new Reply To feature to seamlessly communicate with your users</title>
+    <link href="http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/"/>
+    <id>http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/</id>
+    <published>2017-03-04T17:52:14.000Z</published>
+    <updated>2017-03-04T12:29:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>We have released a new feature which allows you to seamlessly communicate with your users. We love dogfooding and use LiveForm for our contact forms.
+We get a lot of messages and it becomes tedious to create a new email and copy the recipient address to a new email and then respond.
+We have been using this feature for a while and are making it public now. To use this feature just do the following:</p>
+<ol>
+<li>Add an email field to your contact form, you may already have this field. Copy the <code>name</code> of this input field from your contact form.</li>
+<li>Go to the ‘Repy To’ tab for your form and set the <code>reply_to</code> value to the name from step (1)<img src="/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/reply_to.png" alt="Reply To tab for your form" title="Reply To tab for your form">
+</li>
+</ol>
+<p>That is it, now when you get a notification email for your contact form. Just hit ‘Reply’ and continue the conversation.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We have released a new feature which allows you to seamlessly communicate with your users. We love dogfooding and use LiveForm for our co
+    
+    </summary>
+    
+    
+      <category term="Reply to" scheme="http://blog.liveformhq.com/tags/reply-to/"/>
+    
+      <category term="Feature" scheme="http://blog.liveformhq.com/tags/feature/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to build an ajax form using LiveForm and jQuery</title>
     <link href="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/"/>
     <id>http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/</id>
     <published>2017-01-01T23:14:43.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.</p>
 <p>Take this form for example, it has a name, email and a message field.</p>
@@ -53,7 +84,7 @@ And intercept the form submission and make an AJAX post instead of the default. 
     <link href="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/"/>
     <id>http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/</id>
     <published>2016-12-25T19:19:45.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>Many of you have asked for a feature which allows downloading of messages to Excel.
 We now have that feature :)</p>
@@ -88,7 +119,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/"/>
     <id>http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/</id>
     <published>2016-12-19T23:30:46.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can wire up LiveForm to use Akismet to prevent spam on your blogs and sites easily.</p>
 <ol>
@@ -119,7 +150,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/"/>
     <id>http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/</id>
     <published>2016-12-18T00:26:54.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can use Nginx to mask the form id of your LiveForm url. Here is a configuration which lets you do that.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">  server_name awesome.com;</div><div class="line">  # ....</div><div class="line"></div><div class="line">  location /form &#123;</div><div class="line">    proxy_pass https://liveformhq.com/form/369c5f72-7940-4d20-b3c7-8a963fc49a15;</div><div class="line"></div><div class="line">    proxy_set_header  X-Real-IP        $remote_addr;</div><div class="line">    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;</div><div class="line">    proxy_set_header  Host             $http_host;</div><div class="line">    proxy_set_header X_FORWARDED_PROTO $scheme;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -146,7 +177,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/"/>
     <id>http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/</id>
     <published>2016-11-27T18:24:54.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
 <ol>
@@ -201,7 +232,7 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
     <link href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/"/>
     <id>http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/</id>
     <published>2016-11-26T19:35:49.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can now do file uploads using Liveform. You just need two things to be able
 to upload files.</p>
@@ -233,7 +264,7 @@ to upload files.&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/"/>
     <id>http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/</id>
     <published>2016-10-07T23:32:37.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>Our first version of LiveForm is live!</p>
 <p>We hope you guys find it useful :)</p>
@@ -262,7 +293,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
     <link href="http://blog.liveformhq.com/2016/10/07/hello-world/"/>
     <id>http://blog.liveformhq.com/2016/10/07/hello-world/</id>
     <published>2016-10-07T00:00:00.000Z</published>
-    <updated>2017-01-02T11:59:17.000Z</updated>
+    <updated>2017-03-04T12:29:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to the LiveForm Blog!</p>
 <p>We’ll be sharing technology and related stuff used in LiveForm here.</p>
