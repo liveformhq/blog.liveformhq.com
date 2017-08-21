@@ -1,0 +1,20 @@
+ 1. Fork the repo
+ 2. Update your master
+        git remote add up https://github.com/liveformhq/blog.liveformhq.com # one time setup
+        git fetch up
+        git checkout master
+        git merge up/master # this should show that a fast forward merge has occured
+ 3. Create a feature branch e.g. setup-blog-post
+        git checkout -b setup-blog-post
+ 4. Make your changes, and commit them
+ 5. Merge upstream master into your branch
+        git fetch up
+        git merge up/master
+
+ 6. Push your branch to your remote
+        git push origin setup-blog-post
+ 7. Create a pull request from your github page
+        https://github.com/liveformhq/blog.liveformhq.com/compare/master...Panther-kmu:master
+
+        Select your feature branch on the right and master on the left
+ 8. Respond to review comments and make changes as necessary on your branch and push them till the pull request is merged
