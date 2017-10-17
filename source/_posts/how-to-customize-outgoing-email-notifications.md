@@ -24,7 +24,7 @@ Let us look at all the fields on this page in detail. We have a recipients input
 which allows you to fill the recipients for this new notification. This can be filled
 with multiple recipient emails. The **Subject template** as the name implies is the
 template for the subject of the outgoing email. This template can have any text
-plus data using the (liquid markup language)[https://shopify.github.io/liquid/].
+plus data using the [liquid markup language](https://shopify.github.io/liquid/).
 In this example we are creating a subject line using the first 100 characters of a
 field named `message` in our form. The **Body template** is actually simpler, it
 just takes whatever was received in the `message` input field and adds `<br>` tags
@@ -42,6 +42,6 @@ This page allows you to test the new form we just created by sending it data
 Let us submit some test data into this form.
 {% asset_img customize-email-6.png "Filled up test form" %}
 
-This the email that I received. As you can see, the and body have been created
+This the email that I received. As you can see, the subject and body of the email have been created
 based on our subject and body templates.
 {% asset_img customize-email-7.png "Email notification" %}
