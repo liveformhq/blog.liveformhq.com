@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.liveformhq.com/"/>
-  <updated>2017-03-04T12:29:42.000Z</updated>
+  <updated>2017-08-21T09:00:09.000Z</updated>
   <id>http://blog.liveformhq.com/</id>
   
   <author>
@@ -16,11 +16,92 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to setup a form from start to finish</title>
+    <link href="http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/"/>
+    <id>http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/</id>
+    <published>2017-08-18T12:42:38.000Z</published>
+    <updated>2017-08-21T09:00:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="STEP-1"><a href="#STEP-1" class="headerlink" title="STEP 1:"></a>STEP 1:</h2><ul>
+<li>Go to liveformhq.com website and click to the  signup button shown on the right side of the header in orange color.</li>
+<li>There are three input elements, enter your email id <em>danny@mailinator.com</em> and  password respectively, as shown below.<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/lf.png" alt="Liveform signup page" title="Liveform signup page">
+</li>
+</ul>
+<hr>
+<h2 id="STEP-2"><a href="#STEP-2" class="headerlink" title="STEP 2:"></a>STEP 2:</h2><ul>
+<li>You will be confirmed by a message sent to your email id. </li>
+<li>In this scenario <em>danny@mailinator.com</em> will be sent a mail with instructions.</li>
+</ul>
+<hr>
+<h2 id="STEP-3"><a href="#STEP-3" class="headerlink" title="STEP 3:"></a>STEP 3:</h2><ul>
+<li>A field for New Form  will be shown, here you can enter any form name that you want to create.</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/l2.png" alt="Liveform New Form" title="Liveform New Form">
+<ul>
+<li>For example <strong>Contact Us</strong> is form name that you want to create.</li>
+<li>Click Create Form button and a form will be created.</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/lf4.png" alt="Liveform Example form" title="Liveform Example form">
+<hr>
+<h2 id="STEP-4"><a href="#STEP-4" class="headerlink" title="STEP 4:"></a>STEP 4:</h2><ul>
+<li>After the form is created a notification message is shown at the top.</li>
+<li>You will be provided with a wide range of options from Messages to Edit…</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/lf5.png" alt="Liveform Notification" title="Liveform Notification">
+<ul>
+<li><p>For first time setup click the option <strong>Setup</strong> in the bar and you will be forwarded to a page with an example form as shown.</p>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/l5.png" alt="Liveform default form" title="Liveform default form">
+</li>
+<li><p>If you already have a form then all you have to do is change the form’s action and method attributes.</p>
+</li>
+</ul>
+<pre><code>&lt;form action=&quot;https://liveformhq.com/form/bdd19515-fcc7-4e27-a3a3-c28958f7e708&quot; method=&quot;POST&quot; accept-charset=&quot;utf-8&quot;&gt;
+...form code which is already present or created one as per your requirements….
+&lt;/form&gt;
+</code></pre><ul>
+<li>You can add any number….</li>
+<li>One such form with <strong>name</strong> and <strong>email</strong> fields is created as an example.</li>
+<li>Copy the code and paste in the file in your computer.</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/l6.png" alt="Liveform copying form code" title="Liveform copying form code">
+<hr>
+<h2 id="STEP-5"><a href="#STEP-5" class="headerlink" title="STEP 5:"></a>STEP 5:</h2><ul>
+<li>Browse to the file path in your favourite browser and submit the form as shown.</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/l7.png" alt="Liveform browse to file path" title="Liveform browse to file path">
+<ul>
+<li>Enter the fields as in our example the name of the person to contact is  <em>Amanda Fatima</em> and the email id is <em>amandafatima@gmail.com</em> .</li>
+<li>Click submit button and a message will be sent to you.</li>
+<li>Any one can browse and thereby enter the information and create messages. </li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/lf6.png" alt="Liveform submitting a form" title="Liveform submitting a form">
+<p>*You will be redirected to a “Thank You” page after submitting the form.</p>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/l9.png" alt="Liveform Thank You Page" title="Liveform Thank You Page">
+<ul>
+<li>When you sign in to your account at liveformhq.com a series of all the messages will be shown in the Messages tab of your particular form</li>
+</ul>
+<img src="/2017/08/18/how-to-setup-a-form-from-start-to-finish/lf7.png" alt="Messages received" title="Messages received">
+<ul>
+<li>That’s it! You have created a form and anyone can post it so that you can check it!</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;STEP-1&quot;&gt;&lt;a href=&quot;#STEP-1&quot; class=&quot;headerlink&quot; title=&quot;STEP 1:&quot;&gt;&lt;/a&gt;STEP 1:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Go to liveformhq.com website and click to the 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>How to use the new Reply To feature to seamlessly communicate with your users</title>
     <link href="http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/"/>
     <id>http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/</id>
     <published>2017-03-04T17:52:14.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>We have released a new feature which allows you to seamlessly communicate with your users. We love dogfooding and use LiveForm for our contact forms.
 We get a lot of messages and it becomes tedious to create a new email and copy the recipient address to a new email and then respond.
@@ -51,7 +132,7 @@ We have been using this feature for a while and are making it public now. To use
     <link href="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/"/>
     <id>http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/</id>
     <published>2017-01-01T23:14:43.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.</p>
 <p>Take this form for example, it has a name, email and a message field.</p>
@@ -84,7 +165,7 @@ And intercept the form submission and make an AJAX post instead of the default. 
     <link href="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/"/>
     <id>http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/</id>
     <published>2016-12-25T19:19:45.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>Many of you have asked for a feature which allows downloading of messages to Excel.
 We now have that feature :)</p>
@@ -119,7 +200,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/"/>
     <id>http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/</id>
     <published>2016-12-19T23:30:46.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can wire up LiveForm to use Akismet to prevent spam on your blogs and sites easily.</p>
 <ol>
@@ -150,7 +231,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/"/>
     <id>http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/</id>
     <published>2016-12-18T00:26:54.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can use Nginx to mask the form id of your LiveForm url. Here is a configuration which lets you do that.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">  server_name awesome.com;</div><div class="line">  # ....</div><div class="line"></div><div class="line">  location /form &#123;</div><div class="line">    proxy_pass https://liveformhq.com/form/369c5f72-7940-4d20-b3c7-8a963fc49a15;</div><div class="line"></div><div class="line">    proxy_set_header  X-Real-IP        $remote_addr;</div><div class="line">    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;</div><div class="line">    proxy_set_header  Host             $http_host;</div><div class="line">    proxy_set_header X_FORWARDED_PROTO $scheme;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -177,7 +258,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/"/>
     <id>http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/</id>
     <published>2016-11-27T18:24:54.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
 <ol>
@@ -232,7 +313,7 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
     <link href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/"/>
     <id>http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/</id>
     <published>2016-11-26T19:35:49.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can now do file uploads using Liveform. You just need two things to be able
 to upload files.</p>
@@ -264,7 +345,7 @@ to upload files.&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/"/>
     <id>http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/</id>
     <published>2016-10-07T23:32:37.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>Our first version of LiveForm is live!</p>
 <p>We hope you guys find it useful :)</p>
@@ -293,7 +374,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
     <link href="http://blog.liveformhq.com/2016/10/07/hello-world/"/>
     <id>http://blog.liveformhq.com/2016/10/07/hello-world/</id>
     <published>2016-10-07T00:00:00.000Z</published>
-    <updated>2017-03-04T12:29:42.000Z</updated>
+    <updated>2017-08-21T09:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to the LiveForm Blog!</p>
 <p>We’ll be sharing technology and related stuff used in LiveForm here.</p>
