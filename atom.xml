@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.liveformhq.com/"/>
-  <updated>2017-08-21T09:00:09.000Z</updated>
+  <updated>2017-10-17T12:52:49.000Z</updated>
   <id>http://blog.liveformhq.com/</id>
   
   <author>
@@ -16,11 +16,68 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to customize outgoing email notifications</title>
+    <link href="http://blog.liveformhq.com/2017/10/17/how-to-customize-outgoing-email-notifications/"/>
+    <id>http://blog.liveformhq.com/2017/10/17/how-to-customize-outgoing-email-notifications/</id>
+    <published>2017-10-17T17:27:16.000Z</published>
+    <updated>2017-10-17T12:52:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>LiveForm now has a shiny new feature! The ability to customize the email notifications
+that you receive when a form is submitted. Let us look at an example of how to do this.</p>
+<p>Let us setup a form from the beginning to see how to create custom outgoing email notifications.</p>
+<ol>
+<li>Create a form<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-1.png" alt="Create a new Form" title="Create a new Form"></li>
+<li>Browse to the new “Customizable email templates” tab in the form.<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-2.png" alt="Customizable email templates tab" title="Customizable email templates tab"></li>
+<li>Create a new email notification template<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-3.png" alt="Create a new notification template" title="Create a new notification template">
+Let us look at all the fields on this page in detail. We have a recipients input field
+which allows you to fill the recipients for this new notification. This can be filled
+with multiple recipient emails. The <strong>Subject template</strong> as the name implies is the
+template for the subject of the outgoing email. This template can have any text
+plus data using the <a href="https://shopify.github.io/liquid/" target="_blank" rel="external">liquid markup language</a>.
+In this example we are creating a subject line using the first 100 characters of a
+field named <code>message</code> in our form. The <strong>Body template</strong> is actually simpler, it
+just takes whatever was received in the <code>message</code> input field and adds <code>&lt;br&gt;</code> tags
+instead of newlines.</li>
+</ol>
+<p>That is it! We have successfully created a new notification template.
+Let us use our new test drive feature to test out our form.</p>
+<p>Go to the form’s <strong>messages</strong> tab and click on the “Test your form” button.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-4.png" alt="Messages tab" title="Messages tab"></p>
+<p>This page allows you to test the new form we just created by sending it data
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-5.png" alt="Test your form" title="Test your form"></p>
+<p>Let us submit some test data into this form.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-6.png" alt="Filled up test form" title="Filled up test form"></p>
+<p>This the email that I received. As you can see, the subject and body of the email have been created
+based on our subject and body templates.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-7.png" alt="Email notification" title="Email notification"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;LiveForm now has a shiny new feature! The ability to customize the email notifications
+that you receive when a form is submitted. Let us 
+    
+    </summary>
+    
+    
+      <category term="Email" scheme="http://blog.liveformhq.com/tags/email/"/>
+    
+      <category term="Notifications" scheme="http://blog.liveformhq.com/tags/notifications/"/>
+    
+      <category term="Customize" scheme="http://blog.liveformhq.com/tags/customize/"/>
+    
+      <category term="Template" scheme="http://blog.liveformhq.com/tags/template/"/>
+    
+      <category term="Liquid" scheme="http://blog.liveformhq.com/tags/liquid/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to setup a form from start to finish</title>
     <link href="http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/"/>
     <id>http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/</id>
     <published>2017-08-18T12:42:38.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="STEP-1"><a href="#STEP-1" class="headerlink" title="STEP 1:"></a>STEP 1:</h2><ul>
 <li>Go to liveformhq.com website and click to the  signup button shown on the right side of the header in orange color.</li>
@@ -101,7 +158,7 @@
     <link href="http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/"/>
     <id>http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/</id>
     <published>2017-03-04T17:52:14.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>We have released a new feature which allows you to seamlessly communicate with your users. We love dogfooding and use LiveForm for our contact forms.
 We get a lot of messages and it becomes tedious to create a new email and copy the recipient address to a new email and then respond.
@@ -132,7 +189,7 @@ We have been using this feature for a while and are making it public now. To use
     <link href="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/"/>
     <id>http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/</id>
     <published>2017-01-01T23:14:43.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>In this blog post we’ll see how we can use LiveForm and jQuery to build an Ajax form.</p>
 <p>Take this form for example, it has a name, email and a message field.</p>
@@ -165,7 +222,7 @@ And intercept the form submission and make an AJAX post instead of the default. 
     <link href="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/"/>
     <id>http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/</id>
     <published>2016-12-25T19:19:45.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>Many of you have asked for a feature which allows downloading of messages to Excel.
 We now have that feature :)</p>
@@ -200,7 +257,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/"/>
     <id>http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/</id>
     <published>2016-12-19T23:30:46.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can wire up LiveForm to use Akismet to prevent spam on your blogs and sites easily.</p>
 <ol>
@@ -231,7 +288,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/"/>
     <id>http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/</id>
     <published>2016-12-18T00:26:54.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can use Nginx to mask the form id of your LiveForm url. Here is a configuration which lets you do that.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">  server_name awesome.com;</div><div class="line">  # ....</div><div class="line"></div><div class="line">  location /form &#123;</div><div class="line">    proxy_pass https://liveformhq.com/form/369c5f72-7940-4d20-b3c7-8a963fc49a15;</div><div class="line"></div><div class="line">    proxy_set_header  X-Real-IP        $remote_addr;</div><div class="line">    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;</div><div class="line">    proxy_set_header  Host             $http_host;</div><div class="line">    proxy_set_header X_FORWARDED_PROTO $scheme;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -258,7 +315,7 @@ We now have that feature :)&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/"/>
     <id>http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/</id>
     <published>2016-11-27T18:24:54.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/">Yesterday, we released the ability to upload files using Liveform</a> Today, we released readonly API access to messages. These two features allow us to build simple and powerful tools with minimal work. In this blog post, we’ll build a clone of <a href="http://imgur.com/" target="_blank" rel="external">Imgur</a>, the popular image hosting website. We’ll do this using Github Pages and Liveform. Let’s get started!</p>
 <ol>
@@ -313,7 +370,7 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
     <link href="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/"/>
     <id>http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/</id>
     <published>2016-11-26T19:35:49.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>You can now do file uploads using Liveform. You just need two things to be able
 to upload files.</p>
@@ -345,7 +402,7 @@ to upload files.&lt;/p&gt;
     <link href="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/"/>
     <id>http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/</id>
     <published>2016-10-07T23:32:37.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>Our first version of LiveForm is live!</p>
 <p>We hope you guys find it useful :)</p>
@@ -374,7 +431,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
     <link href="http://blog.liveformhq.com/2016/10/07/hello-world/"/>
     <id>http://blog.liveformhq.com/2016/10/07/hello-world/</id>
     <published>2016-10-07T00:00:00.000Z</published>
-    <updated>2017-08-21T09:00:09.000Z</updated>
+    <updated>2017-10-17T12:52:49.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to the LiveForm Blog!</p>
 <p>We’ll be sharing technology and related stuff used in LiveForm here.</p>

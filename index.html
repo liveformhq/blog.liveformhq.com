@@ -66,6 +66,72 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-how-to-customize-outgoing-email-notifications" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/17/how-to-customize-outgoing-email-notifications/" class="article-date">
+  <time datetime="2017-10-17T17:27:16.000Z" itemprop="datePublished">2017-10-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/17/how-to-customize-outgoing-email-notifications/">How to customize outgoing email notifications</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>LiveForm now has a shiny new feature! The ability to customize the email notifications
+that you receive when a form is submitted. Let us look at an example of how to do this.</p>
+<p>Let us setup a form from the beginning to see how to create custom outgoing email notifications.</p>
+<ol>
+<li>Create a form<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-1.png" alt="Create a new Form" title="Create a new Form"></li>
+<li>Browse to the new “Customizable email templates” tab in the form.<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-2.png" alt="Customizable email templates tab" title="Customizable email templates tab"></li>
+<li>Create a new email notification template<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-3.png" alt="Create a new notification template" title="Create a new notification template">
+Let us look at all the fields on this page in detail. We have a recipients input field
+which allows you to fill the recipients for this new notification. This can be filled
+with multiple recipient emails. The <strong>Subject template</strong> as the name implies is the
+template for the subject of the outgoing email. This template can have any text
+plus data using the <a href="https://shopify.github.io/liquid/" target="_blank" rel="external">liquid markup language</a>.
+In this example we are creating a subject line using the first 100 characters of a
+field named <code>message</code> in our form. The <strong>Body template</strong> is actually simpler, it
+just takes whatever was received in the <code>message</code> input field and adds <code>&lt;br&gt;</code> tags
+instead of newlines.</li>
+</ol>
+<p>That is it! We have successfully created a new notification template.
+Let us use our new test drive feature to test out our form.</p>
+<p>Go to the form’s <strong>messages</strong> tab and click on the “Test your form” button.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-4.png" alt="Messages tab" title="Messages tab"></p>
+<p>This page allows you to test the new form we just created by sending it data
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-5.png" alt="Test your form" title="Test your form"></p>
+<p>Let us submit some test data into this form.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-6.png" alt="Filled up test form" title="Filled up test form"></p>
+<p>This the email that I received. As you can see, the subject and body of the email have been created
+based on our subject and body templates.
+<img src="/2017/10/17/how-to-customize-outgoing-email-notifications/customize-email-7.png" alt="Email notification" title="Email notification"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.liveformhq.com/2017/10/17/how-to-customize-outgoing-email-notifications/" data-id="cj8vm0ez5000k1dmu2j31yh5d" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/customize/">Customize</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/email/">Email</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/liquid/">Liquid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notifications/">Notifications</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/template/">Template</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-how-to-setup-a-form-from-start-to-finish" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/18/how-to-setup-a-form-from-start-to-finish/" class="article-date">
@@ -154,7 +220,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/" data-id="cj8vlxilh000k1dmv803w5zih" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2017/08/18/how-to-setup-a-form-from-start-to-finish/" data-id="cj8vm0ezn000v1dmuqq0gu0n8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -199,7 +265,7 @@ We have been using this feature for a while and are making it public now. To use
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/" data-id="cj8vlxilj000l1dmvh3wyzy1p" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2017/03/04/how-to-use-the-new-reply-to-feature-to-seamlessly-communicate-with-your-users/" data-id="cj8vm0ezt000w1dmufrhmmghp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/feature/">Feature</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reply-to/">Reply to</a></li></ul>
@@ -245,7 +311,7 @@ And intercept the form submission and make an AJAX post instead of the default. 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/" data-id="cj8vlxil3000d1dmvuwqly89d" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2017/01/01/how-to-build-an-ajax-form-using-liveform-and-jquery/" data-id="cj8vm0eyl000d1dmu5llpgd25" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax/">Ajax</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax-form/">Ajax Form</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jQuery</a></li></ul>
@@ -290,7 +356,7 @@ This will create a new export which can be downloaded by clicking on the <em>**D
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/" data-id="cj8vlxilt000q1dmvew083mod" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/" data-id="cj8vm0ezx00111dmuyl7f19nz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csv/">CSV</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/download/">Download</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/excel/">Excel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/export/">Export</a></li></ul>
@@ -335,7 +401,7 @@ This will create a new export which can be downloaded by clicking on the <em>**D
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/" data-id="cj8vlximb00141dmvuko8ujw3" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/" data-id="cj8vm0f07001f1dmuo6mpjv74" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/akismet/">Akismet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spam/">Spam</a></li></ul>
@@ -377,7 +443,7 @@ This will create a new export which can be downloaded by clicking on the <em>**D
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/" data-id="cj8vlximh00191dmvffp7fj98" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/12/18/using-nginx-to-mask-the-liveform-url-on-your-contact-forms/" data-id="cj8vm0f0b001k1dmui4ivj1uy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mask/">Mask</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">Nginx</a></li></ul>
@@ -446,7 +512,7 @@ d. Finally we are sticking this into the <code>#container</code> div.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/" data-id="cj8vlxikg00001dmvd4z2pkcj" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/11/27/creating-an-imgur-clone-using-github-pages-and-liveform/" data-id="cj8vm0exy00001dmud2f2714d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li></ul>
@@ -491,7 +557,7 @@ to upload files.</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/" data-id="cj8vlxikt00071dmv2nfhlc5y" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/11/26/file-uploads-for-your-forms/" data-id="cj8vm0eyb00071dmufi1wdim0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/contact-form/">Contact Form</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/file-upload/">File upload</a></li></ul>
@@ -534,7 +600,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/" data-id="cj8vlxim1000z1dmvdjcu32av" class="article-share-link">Share</a>
+      <a data-url="http://blog.liveformhq.com/2016/10/07/our-first-version-is-live/" data-id="cj8vm0f04001a1dmu821fib1f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/live/">Live</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/v1/">V1</a></li></ul>
@@ -546,45 +612,11 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/10/07/hello-world/" class="article-date">
-  <time datetime="2016-10-07T00:00:00.000Z" itemprop="datePublished">2016-10-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to the LiveForm Blog!</p>
-<p>We’ll be sharing technology and related stuff used in LiveForm here.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.liveformhq.com/2016/10/07/hello-world/" data-id="cj8vlxikx000c1dmvyorefdeh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
-  
-
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -596,7 +628,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax-form/">Ajax Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/akismet/">Akismet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csv/">CSV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contact-form/">Contact Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">Download</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/export/">Export</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feature/">Feature</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/file-upload/">File upload</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live/">Live</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mask/">Mask</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reply-to/">Reply to</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spam/">Spam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/v1/">V1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jQuery</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax-form/">Ajax Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/akismet/">Akismet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/csv/">CSV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contact-form/">Contact Form</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/customize/">Customize</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/download/">Download</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/email/">Email</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/">Excel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/export/">Export</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feature/">Feature</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/file-upload/">File upload</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image-uploads/">Image uploads</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/imgur-clone/">Imgur clone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/liquid/">Liquid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live/">Live</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mask/">Mask</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/notifications/">Notifications</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reply-to/">Reply to</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spam/">Spam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/template/">Template</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/v1/">V1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jQuery</a></li></ul>
     </div>
   </div>
 
@@ -606,7 +638,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/api/" style="font-size: 10px;">API</a> <a href="/tags/ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/ajax-form/" style="font-size: 10px;">Ajax Form</a> <a href="/tags/akismet/" style="font-size: 10px;">Akismet</a> <a href="/tags/csv/" style="font-size: 10px;">CSV</a> <a href="/tags/contact-form/" style="font-size: 10px;">Contact Form</a> <a href="/tags/download/" style="font-size: 10px;">Download</a> <a href="/tags/excel/" style="font-size: 10px;">Excel</a> <a href="/tags/export/" style="font-size: 10px;">Export</a> <a href="/tags/feature/" style="font-size: 10px;">Feature</a> <a href="/tags/file-upload/" style="font-size: 10px;">File upload</a> <a href="/tags/image-uploads/" style="font-size: 10px;">Image uploads</a> <a href="/tags/imgur-clone/" style="font-size: 10px;">Imgur clone</a> <a href="/tags/live/" style="font-size: 10px;">Live</a> <a href="/tags/mask/" style="font-size: 10px;">Mask</a> <a href="/tags/nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/reply-to/" style="font-size: 10px;">Reply to</a> <a href="/tags/spam/" style="font-size: 10px;">Spam</a> <a href="/tags/v1/" style="font-size: 10px;">V1</a> <a href="/tags/jquery/" style="font-size: 10px;">jQuery</a>
+      <a href="/tags/api/" style="font-size: 10px;">API</a> <a href="/tags/ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/ajax-form/" style="font-size: 10px;">Ajax Form</a> <a href="/tags/akismet/" style="font-size: 10px;">Akismet</a> <a href="/tags/csv/" style="font-size: 10px;">CSV</a> <a href="/tags/contact-form/" style="font-size: 10px;">Contact Form</a> <a href="/tags/customize/" style="font-size: 10px;">Customize</a> <a href="/tags/download/" style="font-size: 10px;">Download</a> <a href="/tags/email/" style="font-size: 10px;">Email</a> <a href="/tags/excel/" style="font-size: 10px;">Excel</a> <a href="/tags/export/" style="font-size: 10px;">Export</a> <a href="/tags/feature/" style="font-size: 10px;">Feature</a> <a href="/tags/file-upload/" style="font-size: 10px;">File upload</a> <a href="/tags/image-uploads/" style="font-size: 10px;">Image uploads</a> <a href="/tags/imgur-clone/" style="font-size: 10px;">Imgur clone</a> <a href="/tags/liquid/" style="font-size: 10px;">Liquid</a> <a href="/tags/live/" style="font-size: 10px;">Live</a> <a href="/tags/mask/" style="font-size: 10px;">Mask</a> <a href="/tags/nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/notifications/" style="font-size: 10px;">Notifications</a> <a href="/tags/reply-to/" style="font-size: 10px;">Reply to</a> <a href="/tags/spam/" style="font-size: 10px;">Spam</a> <a href="/tags/template/" style="font-size: 10px;">Template</a> <a href="/tags/v1/" style="font-size: 10px;">V1</a> <a href="/tags/jquery/" style="font-size: 10px;">jQuery</a>
     </div>
   </div>
 
@@ -615,7 +647,7 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
   </div>
 
@@ -626,6 +658,10 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/17/how-to-customize-outgoing-email-notifications/">How to customize outgoing email notifications</a>
+          </li>
         
           <li>
             <a href="/2017/08/18/how-to-setup-a-form-from-start-to-finish/">How to setup a form from start to finish</a>
@@ -641,10 +677,6 @@ The tl;dr; version of it is: Use LiveForm for all your online forms without the 
         
           <li>
             <a href="/2016/12/25/liveform-now-has-the-ability-to-export-your-form-s-messages-to-excel-csv/">LiveForm now has the ability to export your form&#39;s messages to Excel/CSV</a>
-          </li>
-        
-          <li>
-            <a href="/2016/12/19/use-akismet-to-prevent-spam-on-your-blogs-and-sites/">Use Akismet to prevent spam on your blogs and sites</a>
           </li>
         
       </ul>
